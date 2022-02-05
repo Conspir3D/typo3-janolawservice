@@ -170,7 +170,7 @@ class JanolawConfigurationUtility
         //PDF File download, needed in every call, may be used in caching is managed before
         $pdfContent = GeneralUtility::getURL($pdfUrl);
         $pdfName = $language . '_' . $type . '.pdf';
-        $pdfPath = '/typo3temp/janolaw/' . $shopid;
+        $pdfPath = './typo3temp/janolaw/' . $shopid;
         if (!is_dir($pdfPath)) {
             GeneralUtility::mkdir_deep(Environment::getPublicPath() . $pdfPath);
         }
