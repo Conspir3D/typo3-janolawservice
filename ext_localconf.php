@@ -13,7 +13,7 @@ ExtensionUtility::configurePlugin(
     [JanolawServiceController::class => 'generate']
 );
 
-if (!is_array(
+if (!array_key_exists(
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['janolaw_janolawservices']
 )) {
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['janolaw_janolawservices'] = [];
